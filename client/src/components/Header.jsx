@@ -7,7 +7,7 @@ export default function Header() {
     <header className="header">
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1.5rem 0' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.8rem', fontWeight: 'bold', color: '#6e44ff' }}>
-          <span style={{fontSize: '2.2rem'}}>⚖️</span> wakonekt
+          <span style={{fontSize: '2.2rem'}}>⚖️</span> Wakonekt
         </Link>
 
         <nav style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>

@@ -17,6 +17,18 @@ export default function App() {
       <Route path="/clients" element={<ClientPage />} />
       <Route path="/lawyers" element={<LawyerPage />} />
       <Route path="/login" element={<LoginPage />} />
+      <Route path="/register" element={<LoginPage />} />
+      {/* <Route path="/onboarding/junior" element={ 
+        <ProtectedRoute allowedRole="junior">
+          <JuniorOnboarding />
+          </ProtectedRoute>
+        } />
+      <Route path="/find-advocate" element={
+          <ProtectedRoute allowedRole="junior">
+            <FindAdvocate />
+            </ProtectedRoute>
+          } /> */}
+      
 
       <Route path="/client-dashboard" element={
         <ProtectedRoute allowedRole="client">

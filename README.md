@@ -1,6 +1,11 @@
 # Please bear with me, this project will be done by 26th evening , 5.00 pm EAT.
 
 <br><br><br><br><br>
+
+# Wakonekt 
+link to power point presentation (slide deck): <a href="https://www.canva.com/design/DAG5VoYCT8A/_RYIzhX4v9o1qcG5iKiqsQ/edit?utm_content=DAG5VoYCT8A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+click here to access the Wakonekt slide deck </a>
+
 ## Home Page
 ![home page](images/homepage.png)
 
@@ -12,7 +17,7 @@
 ## lawyer dashboard
 ![lawyer dashboard](images/lawyer_dashboard.png)
 
-# Wakonekt 
+
 ## Free Pro-Bono Legal Aid Platform
 Connecting indigent clients with senior advocates and supervised junior legal assistants.
 
