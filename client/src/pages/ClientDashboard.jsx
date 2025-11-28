@@ -139,7 +139,7 @@ export default function ClientDashboard() {
                 boxShadow: '0 10px 30px rgba(110,68,255,0.3)'
               }}
             >
-              <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>Plus</div>
+              <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>⚖️</div>
               <h3 style={{ fontSize: '1.8rem' }}>Start New Case</h3>
               <p>Get free legal help now</p>
             </div>
@@ -198,6 +198,26 @@ export default function ClientDashboard() {
                   ))}
                 </div>
               )}
+            </div>
+          </div>
+          
+          {/* Additional Information Section */}
+          <div style={{ marginTop: '2rem', background: 'white', borderRadius: '16px', padding: '2rem', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }}>
+            <h2 style={{ marginBottom: '1.5rem', color: '#1a0033' }}>About Our Pro Bono Services</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+              <div>
+                <h3>How It Works</h3>
+                <ul style={{ paddingLeft: '1.5rem' }}>
+                  <li>Start a new case by clicking the button above</li>
+                  <li>Chat with a junior legal assistant</li>
+                  <li>Senior advocate supervises the conversation</li>
+                  <li>Receive quality legal guidance at no cost</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Our Commitment</h3>
+                <p>All our services are provided free of charge through our pro bono legal network. Our senior advocates mentor junior legal assistants while ensuring you receive quality legal assistance.</p>
+              </div>
             </div>
           </div>
         </div>

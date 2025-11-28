@@ -16,7 +16,10 @@ export default function Header() {
           <Link to="/lawyers" className={location.pathname === '/lawyers' ? 'active' : ''}>For Lawyers</Link> */}
           {/* <Link to="/contact">Contact</Link> */}
           <Link to="/login">
-            <button className="btn-primary">Get / Provide Legal Help</button>
+            <button className="btn-primary">Get Free Legal Help</button>
+          </Link>
+          <Link to="/login?role=junior">
+            <button className="btn-secondary">Join as Legal Assistant</button>
           </Link>
         </nav>
       </div>

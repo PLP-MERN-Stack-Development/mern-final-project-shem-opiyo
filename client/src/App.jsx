@@ -8,6 +8,13 @@ import ClientDashboard from './pages/ClientDashboard';
 import LawyerDashboard from './pages/LawyerDashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 import ChatPage from './pages/ChatPage';
+import JuniorOnboarding from './pages/JuniorOnboarding';
+import FindAdvocate from './pages/FindAdvocate';
+import AdvocateProfile from './pages/AdvocateProfile';
+import JuniorCommunity from './pages/JuniorCommunity';
+import FeedbackDashboard from './pages/FeedbackDashboard';
+import CaseSupervision from './pages/CaseSupervision';
+import NotificationCenter from './pages/NotificationCenter';
 
 
 export default function App() {
@@ -18,7 +25,7 @@ export default function App() {
       <Route path="/lawyers" element={<LawyerPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<LoginPage />} />
-      {/* <Route path="/onboarding/junior" element={ 
+      <Route path="/onboarding/junior" element={ 
         <ProtectedRoute allowedRole="junior">
           <JuniorOnboarding />
           </ProtectedRoute>
@@ -27,7 +34,32 @@ export default function App() {
           <ProtectedRoute allowedRole="junior">
             <FindAdvocate />
             </ProtectedRoute>
-          } /> */}
+          } />
+      <Route path="/advocate/:advocateId" element={
+          <ProtectedRoute allowedRole="lawyer">
+            <AdvocateProfile />
+          </ProtectedRoute>
+        } />
+      <Route path="/junior-community" element={
+          <ProtectedRoute allowedRole="lawyer">
+            <JuniorCommunity />
+          </ProtectedRoute>
+        } />
+      <Route path="/feedback-dashboard" element={
+          <ProtectedRoute allowedRole="lawyer">
+            <FeedbackDashboard />
+          </ProtectedRoute>
+        } />
+      <Route path="/case-supervision/:caseId" element={
+          <ProtectedRoute allowedRole="lawyer">
+            <CaseSupervision />
+          </ProtectedRoute>
+        } />
+      <Route path="/notifications" element={
+          <ProtectedRoute>
+            <NotificationCenter />
+          </ProtectedRoute>
+        } />
       
 
       <Route path="/client-dashboard" element={
